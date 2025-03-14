@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        th {
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        td:nth-child(1) {
+            text-align: center;
+        }
+        td:nth-child(2) {
+            text-transform: uppercase;
+        }
+        td:nth-child(3) {
+            color: red;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +35,21 @@
     </title>
 </head>
 <body>
-    <table border="1"  style="border-collapse: collapse; width: 100%">
+    <table>
             <tr>
-                <th style="background-color: greenyellow; color: white; font-size: 18px; text-align: center;font-weight: bold;">No</th>
-                <th style="background-color: greenyellow; color: white; font-size: 18px; text-align: center;font-weight: bold">Nama Produk</th>
-                <th style="background-color: greenyellow; color: white; font-size: 18px; text-align: center;font-weight: bold">Harga</th>
+                <th>No</th>
+                <tH>Nama Produk</th>
+                <th>Harga</th>
             </tr>
             <tr>
-                <th style="text-align: center;">1</th>
-                <th style="text-transform: uppercase;">Mouse</th>
-                <th style="color: red;">Rp 100.000</th>
+                <td>1</td>
+                <td>Mouse</td>
+                <td>Rp 100.000</td>
             </tr>
             <tr>
-                <th>2</th>
-                <th>Keyboard</th>
-                <th>Rp 250.000</th>
+                <td>2</td>
+                <td>Keyboard</td>
+                <td>Rp 250.000</td>
             </tr>
     </table>
 </body>
